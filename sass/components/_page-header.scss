@@ -5,7 +5,7 @@
     border-bottom: 1px solid #ECECEC;
     /* outline: 2px solid tomato; */
 
-    background-color: $primary-text-color;
+    background-color: $primary-text-color;      
 }
 
 .header-nav {
@@ -13,7 +13,6 @@
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
-
 }
 
 .header-nav__logo {
@@ -89,7 +88,7 @@
 
 .header-contacts__item{
     &:not(:last-child){
-    margin-right: 50px;
+        margin-right: 50px;
     }
 }
 
