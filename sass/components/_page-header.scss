@@ -36,6 +36,15 @@
     }
 }
 
+.header-nav__button{
+    width: 24px;
+    height: 16px;
+    padding: 0;
+    border: 0;
+    background-color: $primary-text-color;
+    cursor: pointer;
+}
+
 .header-nav__list {
     display: flex;
     padding: 0;

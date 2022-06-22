@@ -314,3 +314,98 @@
         background-color: teal;
     }
 }
+
+// Мобільне меню
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    // padding: 32px;
+    background-color: $primary-text-color;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+    
+}
+
+.menu-toggle {
+    min-height: 19px;
+    min-width: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+
+.menu-toggle__list {
+    display: block;
+    font-size: 40px;
+    // padding: 0;
+    // margin: 0;
+    margin-left: 40px;
+    margin-top: 8px;
+}
+
+.menu-toggle__item{
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+    
+}
+
+.menu-toggle__link {
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: $title-text-color;
+
+    transition: color $transition-duration $transition-timing-function;
+}
+
+.menu-toggle__link--current {
+    color: $link-text-color;
+}
+
+.menu-contacts__item {
+    &:not(:last-child) {
+        margin-top: 302px;
+        margin-bottom: 32px;
+    }
+}
+
+.menu-tel__link {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+
+    color: $link-text-color;
+
+    margin-left: 40px;
+}
+
+.menu-mail__link {
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+
+    color: $subtitle-text-color;
+
+    margin-left: 40px;
+}
