@@ -1,0 +1,10 @@
+@media screen and (min-width:1201px) {
+    .client-list {
+        gap: 30px;
+        display: flex;
+    }
+
+    .client-list__item {
+        flex-basis: calc(100% - 30px);
+    }
+}

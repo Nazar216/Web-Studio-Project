@@ -1,17 +1,15 @@
 @media screen and (max-width:480px) {
-    .header{
-        max-width: 100%;
-    }  
+    // .header{
+    //     max-width: 100%;
+    // }  
 
     .header-nav {
-        // display: block;
+        justify-content: space-between;
         padding-top: 16px;
         padding-bottom: 16px;
     }
 
     .header-nav__button{
-       margin-left: 284px;
-
        &:hover{
         color: $link-text-color;
        }
@@ -32,9 +30,8 @@
     }
 
     .section-overlay {
-        width: 480px;
-        height: 400px;
         padding-top: 118px;
+        padding-bottom: 118px;
         background-size: cover;
     }
 
@@ -44,7 +41,6 @@
     }
 
     .section-features {
-        max-width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -57,10 +53,6 @@
         margin-bottom: 30px;
     }
 
-    .features-list__box {
-        width: 100%;
-    }
-
     .features-list__title {
         text-align: center;
     }
@@ -70,7 +62,6 @@
     }
 
     .section-team {
-        width: 480px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -80,17 +71,10 @@
     }
 
     .team-list__item {
-        height: 622px;
         margin-bottom: 30px;
     }
 
-    .team-list__image {
-        width: 450px;
-        height: 460px;
-    }
-
     .social-list {
-        margin-bottom: 24px;
         justify-content: center;
     }
 
@@ -99,23 +83,22 @@
     }
 
     .section-client {
-        max-width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
     .client-list {
+        gap: 30px;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .client-list__item {
-        margin-right: 30px;
+        flex-basis: calc((100% - 30px) / 2);
     }
 
 
     .footer-phone {
-        width: 480px;
         text-align: center;
     }
 
@@ -202,9 +185,7 @@
     }
 
     .modal {
-        width: 450px;
-        height: 609px;
-        margin-top: 93px
+        width: calc(100% - 15px);
     }
 
     .form-modal__consent {
@@ -219,6 +200,5 @@
     .form-policy {
         margin-left: 0;
     }
-
 
 }

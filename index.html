@@ -370,6 +370,128 @@
             </div>
         </section>
 
+        <!-- Модальне вікно -->
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <div class="modal__thumb">
+                    <button class="modal__button" data-modal-close>
+                        <svg width="11px" height="11px">
+                            <use href="./image/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+        
+                <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
+        
+                <form class="form-modal">
+        
+                    <div class="form-modal__field">
+                        <input class="form-modal__input" type="text" name="name" id="name" placeholder=" ">
+                        <label class="form-modal__name" for="name">Имя</label>
+                        <svg class="form-modal__icon" width="18px" height="18px">
+                            <use href="./image/sprite.svg#icon-person-black"></use>
+                        </svg>
+                    </div>
+        
+                    <div class="form-modal__field">
+                        <input class="form-modal__input" type="tel" name="tel" id="tel" placeholder=" ">
+                        <label class="form-modal__tel" for="tel">Телефон</label>
+                        <svg class="form-modal__icon" width="18px" height="18px">
+                            <use href="./image/sprite.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+        
+                    <div class="form-modal__field">
+                        <input class="form-modal__input" type="email" name="mail" id="mail" placeholder=" ">
+                        <label class="form-modal__mail" for="mail">Почта</label>
+                        <svg class="form-modal__icon" width="18px" height="18px">
+                            <use href="./image/sprite.svg#icon-email-black"></use>
+                        </svg>
+                    </div>
+        
+                    <div class="form-modal__field">
+                        <label class="form-modal__comment" for="comment">Комментарий</label>
+                        <textarea class="form-modal__text" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+        
+        
+        
+                    <label class="form-policy" for="policy">
+        
+                        <input class="form-checkbox" type="checkbox" name="policy" id="policy">
+        
+                        <svg class="icon-rectangle" width="16px" height="15px">
+                            <use href="./image/sprite.svg#icon-rectangle"></use>
+                        </svg>
+        
+                        <svg class="icon-checkbox" width="16px" height="15px">
+                            <use href="./image/sprite.svg#icon-checkbox-blue"></use>
+                        </svg>
+        
+                        <span class="form-modal__consent">Соглашаюсь с рассылкой и принимаю
+                            <a href="" class="form-modal__consent-link">Условия договора</a>
+                        </span>
+        
+                    </label>
+        
+                    <div class="form-modal__thumb">
+                        <button class="form-modal__button" type="submit">Отправить</button>
+                    </div>
+        
+                </form>
+            </div>
+        </div>
+        
+        <!-- Мобільне меню -->
+        
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg width="19px" height="19px">
+                    <use href="./image/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="menu-toggle__list">
+                <li class="menu-toggle__item">
+                    <a href="" class="menu-toggle__link menu-toggle__link--current">Студия</a>
+                </li>
+                <li class="menu-toggle__item">
+                    <a href="./portfolio.html" class="menu-toggle__link">Портфолио</a>
+                </li>
+                <li class="menu-toggle__item">
+                    <a href="" class="menu-toggle__link">Контакты</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="menu-contacts__item">
+                    <a href="tel:+380961111111" class="menu-tel__link">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="menu-contacts__item">
+                    <a href="mailto:info@devstudio.com" class="menu-mail__link">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+        
+            <ul class="social-toggle__list">
+                <li class="social-toggle__item">
+                    <a href="" class="social-toggle__link">Instagram</a>
+                </li>
+                <li class="social-toggle__item">
+                    <a href="" class="social-toggle__link">Twitter</a>
+                </li>
+                <li class="social-toggle__item">
+                    <a href="" class="social-toggle__link">Facebook</a>
+                </li>
+                <li class="social-toggle__item">
+                    <a href="" class="social-toggle__link">LinkedIn</a>
+                </li>
+            </ul>
+        
+        </div>
+
     </main>
         
     <!-- FOOTER -->
@@ -434,127 +556,6 @@
         </div>
     </footer>
 
-    <!-- Модальне вікно -->
-
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">  
-            <div class="modal__thumb">
-                <button class="modal__button" data-modal-close>
-                    <svg width="11px" height="11px">
-                        <use href="./image/sprite.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </div> 
-            
-            <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
-
-            <form class="form-modal">
-
-               <div class="form-modal__field">                   
-                    <input class="form-modal__input" type="text" name="name" id="name" placeholder=" ">
-                    <label class="form-modal__name" for="name">Имя</label>
-                    <svg class="form-modal__icon" width="18px" height="18px">
-                        <use href="./image/sprite.svg#icon-person-black"></use>
-                    </svg>
-                </div>
-                
-                <div class="form-modal__field">                   
-                    <input class="form-modal__input" type="tel" name="tel" id="tel" placeholder=" ">
-                    <label class="form-modal__tel" for="tel">Телефон</label>
-                    <svg class="form-modal__icon" width="18px" height="18px">
-                        <use href="./image/sprite.svg#icon-phone-black"></use>
-                    </svg>
-                </div>
-                
-                <div class="form-modal__field">                   
-                    <input class="form-modal__input" type="email" name="mail" id="mail" placeholder=" ">
-                    <label class="form-modal__mail" for="mail">Почта</label>
-                    <svg class="form-modal__icon" width="18px" height="18px">
-                        <use href="./image/sprite.svg#icon-email-black"></use>
-                    </svg>
-                </div>
-                
-                <div class="form-modal__field">
-                    <label class="form-modal__comment" for="comment">Комментарий</label>
-                    <textarea class="form-modal__text" name="comment" id="comment" placeholder="Введите текст"></textarea>
-                </div>
-                               
-
-                
-                <label class="form-policy" for="policy">
-
-                    <input class="form-checkbox" type="checkbox" name="policy" id="policy">
-                   
-                    <svg class="icon-rectangle" width="16px" height="15px">
-                        <use href="./image/sprite.svg#icon-rectangle"></use>
-                    </svg>
-
-                    <svg class="icon-checkbox" width="16px" height="15px">
-                        <use href="./image/sprite.svg#icon-checkbox-blue"></use>
-                    </svg>
-
-                    <span class="form-modal__consent">Соглашаюсь с рассылкой и принимаю 
-                        <a href="" class="form-modal__consent-link">Условия договора</a>
-                    </span> 
-
-                </label>
-                               
-                <div class="form-modal__thumb">
-                    <button class="form-modal__button" type="submit">Отправить</button>
-                </div>
-                
-            </form>
-        </div>
-    </div>
-
-    <!-- Мобільне меню -->
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-            <svg width="19px" height="19px">
-                <use href="./image/sprite.svg#icon-close"></use>
-            </svg>
-        </button>
-        <ul class="menu-toggle__list">
-            <li class="menu-toggle__item">
-                <a href="" class="menu-toggle__link menu-toggle__link--current">Студия</a>
-            </li>
-            <li class="menu-toggle__item">
-                <a href="./portfolio.html" class="menu-toggle__link">Портфолио</a>
-            </li>
-            <li class="menu-toggle__item">
-                <a href="" class="menu-toggle__link">Контакты</a>
-            </li>
-        </ul>
-        <ul>
-            <li class="menu-contacts__item">
-                <a href="tel:+380961111111" class="menu-tel__link">
-                    +38 096 111 11 11
-                </a>
-            </li>
-            <li class="menu-contacts__item">
-                <a href="mailto:info@devstudio.com" class="menu-mail__link">
-                    info@devstudio.com
-                </a>
-            </li>
-        </ul>
-
-        <ul class="social-toggle__list">
-            <li class="social-toggle__item">
-                <a href="" class="social-toggle__link">Instagram</a>
-            </li>
-            <li class="social-toggle__item">
-                <a href="" class="social-toggle__link">Twitter</a>
-            </li>
-            <li class="social-toggle__item">
-                <a href="" class="social-toggle__link">Facebook</a>
-            </li>
-            <li class="social-toggle__item">
-                <a href="" class="social-toggle__link">LinkedIn</a>
-            </li>
-        </ul>
-        
-    </div>
                 
     <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

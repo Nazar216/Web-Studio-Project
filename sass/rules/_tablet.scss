@@ -1,5 +1,21 @@
-@media screen and (max-width:768px) {
-    // .header {
-    //     max-width: 100%;
-    // }
+@media screen and (min-width:1200px) {
+    .team-list__item {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .team-list__item {
+        padding-bottom: 24px;
+    }
+
+    .client-list {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .client-list__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }

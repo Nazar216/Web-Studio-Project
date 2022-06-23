@@ -21,10 +21,6 @@
     background-color: $primary-text-color;
 }
 
-.team-list__image{
-    width: 270px;
-}
-
 
 .team-list__name {
     margin-bottom: 10px;
@@ -47,7 +43,7 @@
 .social-list {
     display: flex;
     margin-top: 16px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
     justify-content: space-evenly;
 }
 
