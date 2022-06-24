@@ -1,18 +1,9 @@
 @media screen and (max-width:480px) {
-    // .header{
-    //     max-width: 100%;
-    // }  
 
     .header-nav {
         justify-content: space-between;
         padding-top: 16px;
         padding-bottom: 16px;
-    }
-
-    .header-nav__button{
-       &:hover{
-        color: $link-text-color;
-       }
     }
 
     .header-nav__burger {
@@ -97,7 +88,6 @@
         flex-basis: calc((100% - 30px) / 2);
     }
 
-
     .footer-phone {
         text-align: center;
     }
@@ -134,26 +124,11 @@
         margin-left: 0;
     }
 
+    // Портфоліо
+
     .section-portfolio {
-        width: 480px;
         padding-top: 60px;
         padding-bottom: 60px;
-    }
-
-    .portfolio-list {
-        display: inline-block;
-        
-    }
-
-    .work-list {
-        display: block;
-        margin-top: 40px;
-        
-    }
-
-    .work-list__image {
-        width: 450px;
-        height: 294px;
     }
 
     .portfolio-list{
@@ -163,10 +138,15 @@
     }
 
     .portfolio-list__item {
-        &:not(:last-child) {
-            margin-right: 8px;
+
+        &:nth-child(-n+3){
             margin-bottom: 15px;
         }
+    }
+
+    .work-list {
+        display: block;
+        margin-top: 40px;
     }
 
     .work-list__item {
@@ -180,8 +160,7 @@
     }
 
     .work-list__subtitle {
-        width: 450px;
-        height: 294px; 
+        height: 100%; 
     }
 
     .modal {
@@ -189,12 +168,8 @@
     }
 
     .form-modal__consent {
-        margin-left: 8px;
-
         font-size: 12px;
         line-height: 1.16;
-
-        color: $subtitle-text-color;
     }
 
     .form-policy {
