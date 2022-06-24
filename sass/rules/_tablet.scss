@@ -4,7 +4,54 @@
     }
 }
 
-@media screen and (max-width:1199px) {
+
+@media screen and (min-width:481px) and (max-width:1199px) {
+   .menu-container{
+        display: none;
+    }
+
+    .header-nav__list{
+        margin-left: 88px;
+    }
+
+   .header-nav__button{
+        display: none;
+    }
+
+    .header-contacts__list{
+        display: block;
+        margin-left: 84px;
+    }
+
+    .header-contacts__item{
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+    }
+
+    .section-overlay {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-size: cover;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-business{
+        display: none;
+    }
+
     .team-list__item {
         padding-bottom: 24px;
     }
@@ -12,7 +59,7 @@
     .client-list {
         gap: 30px;
         flex-wrap: wrap;
-        justify-content: center;
+        // justify-content: center;
     }
 
     .client-list__item {
