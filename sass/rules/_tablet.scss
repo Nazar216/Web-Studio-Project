@@ -26,6 +26,7 @@
     .header-contacts__item{
         &:not(:last-child){
             margin-bottom: 10px;
+            margin-right: 0;
         }
     }
 
@@ -36,15 +37,38 @@
     }
 
 
+    .section-features{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .features-list{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .features-list__item{
+        width: calc((100% - 30px) / 2);
+    }
 
 
+    .section-team{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
+    .team-list {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
+    .team-list__item {
+        width: calc((100% - 30px) / 2);
+    }
 
-
-
-
-
+    .social-list {
+        justify-content: center;
+    }
 
 
 
@@ -63,6 +87,12 @@
     }
 
     .client-list__item {
-        flex-basis: calc((100% - 60px) / 3);
+        width: calc((100% - 60px) / 3);
+    }
+
+
+    .general-footer {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

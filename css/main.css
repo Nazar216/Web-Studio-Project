@@ -1555,12 +1555,49 @@ img {
 
   .header-contacts__item:not(:last-child) {
     margin-bottom: 10px;
+    margin-right: 0;
   }
 
   .section-overlay {
     padding-top: 118px;
     padding-bottom: 118px;
     background-size: cover;
+  }
+
+  .section-features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .features-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .features-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .team-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .team-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .section-business {
@@ -1578,8 +1615,15 @@ img {
   }
 
   .client-list__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
+  }
+
+  .general-footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1673,8 +1717,7 @@ img {
   }
 
   .client-list__item {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 
   .footer-phone {
