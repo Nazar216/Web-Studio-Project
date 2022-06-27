@@ -1,17 +1,16 @@
-@media screen and (min-width:1200px) {
-    .team-list__item {
-        padding-bottom: 30px;
-    }
-}
-
-
 @media screen and (min-width:481px) and (max-width:1199px) {
    .menu-container{
         display: none;
     }
 
+    .header-nav{
+        justify-content: space-between;
+        padding-top: 21px;
+        padding-bottom: 20px;
+    }
+
     .header-nav__list{
-        margin-left: 88px;
+        margin-left: 0;
     }
 
    .header-nav__button{
@@ -20,7 +19,7 @@
 
     .header-contacts__list{
         display: block;
-        margin-left: 84px;
+        margin-left: 0;
     }
 
     .header-contacts__item{
@@ -29,6 +28,7 @@
             margin-right: 0;
         }
     }
+
 
     .section-overlay {
         padding-top: 118px;
@@ -70,8 +70,6 @@
         justify-content: center;
     }
 
-
-
     .section-business{
         display: none;
     }
@@ -93,6 +91,62 @@
 
     .general-footer {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .container-footer{
+        text-align: center;
+    }
+
+    .container-join{
+        text-align: center;
+        padding-top: 65px;
+        margin-left: 0;
+    }
+
+    .container-form{
+        padding-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-button{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-label{
+        text-align: center;
+    }
+
+    .form-input{
+        width: 450px;
+    }
+
+
+    // Portfolio 
+
+    .section-portfolio {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .work-list {
+        flex-wrap: wrap;
+        gap: 30px;
+
+        margin-top: 30px;
+    }
+
+    .work-list__item {
+        margin-bottom: 0;
+        width: calc((100% - 30px) / 2);
+    }
+
+    .work-list__subtitle{
+        height: 100%;
     }
 }

@@ -1,4 +1,8 @@
-@media screen and (min-width:1201px) {
+@media screen and (min-width:1200px) {
+    .header-nav__button{
+        display: none;
+    }
+
     .client-list {
         gap: 30px;
         display: flex;
@@ -6,5 +10,21 @@
 
     .client-list__item {
         flex-basis: calc(100% - 30px);
+    }
+
+    .team-list__item {
+        padding-bottom: 30px;
+
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+
+    .features-list__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .general-footer{
+        justify-content: center;
     }
 }
