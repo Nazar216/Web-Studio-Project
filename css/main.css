@@ -1352,6 +1352,7 @@ img {
   margin-left: 10px;
   margin-right: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .social-toggle__link {
