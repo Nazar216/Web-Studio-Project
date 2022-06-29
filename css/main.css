@@ -1491,8 +1491,6 @@ img {
   margin-bottom: 4px;
   margin-left: 24px;
   display: inline-block;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1679,6 +1677,11 @@ img {
 
   .form-input {
     width: 450px;
+  }
+
+  .form-span {
+    padding-left: 166px;
+    padding-right: 152px;
   }
 
   .section-portfolio {
@@ -1878,5 +1881,6 @@ img {
 
   .form-policy {
     margin-left: 0;
+    width: auto;
   }
 }/*# sourceMappingURL=main.css.map */
