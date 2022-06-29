@@ -7,6 +7,7 @@
         justify-content: space-between;
         padding-top: 21px;
         padding-bottom: 20px;
+        gap: 30px;
     }
 
     .header-nav__list{
@@ -50,7 +51,6 @@
     .features-list__item{
         width: calc((100% - 30px) / 2);
     }
-
 
     .section-team{
         padding-top: 60px;

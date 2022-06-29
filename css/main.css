@@ -1282,13 +1282,14 @@ img {
 
 .menu-toggle {
   display: block;
-  height: 19px;
-  width: 19px;
   margin-left: auto;
   margin-right: 25px;
   margin-top: 21px;
   border: 0;
   background-color: transparent;
+}
+.menu-toggle:hover {
+  fill: #2196F3;
 }
 
 .menu-toggle__list {
@@ -1539,6 +1540,10 @@ img {
     margin-right: 30px;
   }
 
+  .features-list__description {
+    width: 270px;
+  }
+
   .general-footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1556,6 +1561,7 @@ img {
             justify-content: space-between;
     padding-top: 21px;
     padding-bottom: 20px;
+    gap: 30px;
   }
 
   .header-nav__list {
@@ -1760,6 +1766,7 @@ img {
 
   .team-list__item {
     margin-bottom: 30px;
+    padding-bottom: 24px;
   }
 
   .social-list {
